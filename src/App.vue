@@ -1,23 +1,25 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <myheader></myheader>
+    <mytab></mytab>
+    <mycontent></mycontent>
   </div>
 </template>
 
 <script>
+import myheader from './components/header/header.vue';
+import mytab from './components/tab/tab.vue';
+import mycontent from './components/content/content.vue';
 export default {
-  name: 'App'
-}
+  name: 'App',
+  components: {
+    myheader,
+    mytab,
+    mycontent
+  }
+};
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>

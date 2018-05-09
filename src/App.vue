@@ -12,6 +12,18 @@ import mytab from './components/tab/tab.vue';
 
 export default {
   name: 'App',
+  data () {
+    return {
+      seller: {}
+    };
+  },
+  created () {
+    this.$http.get('/api/index').then((response) => {
+      console.log(response);
+    }, (response) => {
+      console.log(response);
+    });
+  },
   components: {
     myheader,
     mytab

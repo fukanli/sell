@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import myheader from './components/header/header.vue';
-import mytab from './components/tab/tab.vue';
+import myheader from 'components/header/header.vue';
+import mytab from 'components/tab/tab.vue';
 
 export default {
   name: 'App',
